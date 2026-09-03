@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "edets": {
+      "type": "http",
+      "url": "https://edets.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${EDETS_API_KEY}"
+      }
+    }
+  }
+}

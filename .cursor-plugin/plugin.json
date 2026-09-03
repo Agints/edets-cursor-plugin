@@ -1,0 +1,31 @@
+{
+  "name": "edets",
+  "displayName": "edets",
+  "description": "Generate edets Max and edets Motion clips from a still. Hosted Streamable HTTP. Prepaid seconds. Bearer key from edets.com/api/keys.",
+  "version": "1.0.0",
+  "author": {
+    "name": "BedCash Creative",
+    "email": "info@gesha.com"
+  },
+  "publisher": "edets",
+  "homepage": "https://edets.com/mcp",
+  "repository": "https://github.com/Mikey-Rodriguez/edets-cursor-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": ["edets", "video", "mcp", "generate", "clip"],
+  "category": "developer-tools",
+  "tags": ["media", "creative", "video", "ai-generation"],
+  "skills": "skills/",
+  "mcpServers": "mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "EDETS_API_KEY": {
+        "type": "string",
+        "title": "edets API key",
+        "description": "Bearer key minted at https://edets.com/api/keys. Prefix is edets_live_."
+      }
+    },
+    "required": ["EDETS_API_KEY"]
+  }
+}

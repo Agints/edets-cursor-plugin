@@ -1,0 +1,6 @@
+.DS_Store
+.env
+.env.*
+*.pem
+*edets_live_*
+node_modules/
