@@ -1,0 +1,19 @@
+---
+description: Commit as Mike Rodriguez, never as an agent identity
+alwaysApply: true
+---
+
+<!-- git-author-2026-11-24 -->
+## Git author (Mike, 2026-11-24)
+
+All commits on Agints and Mike's repos are authored as **Mike Rodriguez**, never as Cursor Agent, Claude, Codex, or any other bot identity.
+
+- `git` `user.name` is `Mike Rodriguez`
+- `git` `user.email` is `info@agints.com`
+- Do not pass `--author`. Do not set `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL`, `GIT_COMMITTER_NAME`, or `GIT_COMMITTER_EMAIL` to anything else. Do not use a tool's default bot author, and do not override the global git identity.
+- If a tool cannot set the author (for example Cursor cloud agents), still commit with this machine's git identity when possible, and always add this trailer on its own line in the commit message:
+
+  `Co-authored-by: Mike Rodriguez <info@agints.com>`
+
+- Never amend, rewrite, or force-push history to "fix" authors unless Mike has explicitly asked for a rewrite.
+<!-- /git-author-2026-11-24 -->
